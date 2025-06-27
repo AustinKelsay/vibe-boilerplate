@@ -1,6 +1,6 @@
 # vibe-boilerplate
 
-A boilerplate template for starting and building out a high qaulity vibecoded application
+A boilerplate template for starting and building out a high quality vibecoded application
 
 ## Walkthrough:
     1. visit docs/setup.md
