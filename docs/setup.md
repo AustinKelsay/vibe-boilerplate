@@ -4,7 +4,7 @@ This guide walks you through setting up a new project from scratch using a struc
 
 ## Overview
 
-We'll create a series of documentation files that define your project's structure, rules, and implementation plan. This approach ensures clarity and consistency throughout development.
+Create comprehensive documentation that defines your project's structure, rules, and implementation plan. This documentation-first approach ensures clarity and consistency throughout development.
 
 ## Phase 1: Project Foundation
 
@@ -20,56 +20,58 @@ Create `user-flow.md` using your project overview as reference.
 
 **Prompt:**
 ```
-Use @project-overview.md to create a document called `user-flow.md`, which should define the user journey through different segments of the application.
+Use @project-overview.md to create `user-flow.md` that defines the user journey through different segments of the application.
 
-The user journey should take into account the different features the app has & how they are connected to one-another. This document will later serve as a guide for building out our project architecture and UI elements.
+Map how features connect to one another. This will guide our project architecture and UI elements.
 
-Ask clarifying questions if needed-- we don't want any embellishments or assumptions.
+Ask clarifying questions if needed—avoid embellishments or assumptions.
 ```
 
 ### Step 3: Select Technology Stack
 Create `tech-stack.md` with technology recommendations.
 
-**Before prompting:** Decide on any technologies you already know you want to use (e.g., TypeScript, React, Tailwind CSS, Shadcn, Next.js, Supabase, Vercel).
+**Before prompting:** Decide on any technologies you already want to use (e.g., TypeScript, React, Tailwind CSS, Shadcn, Next.js, Supabase, Vercel).
 
 **Prompt:**
 ```
-Use @project-overview.md and @user-flow.md to make recommendations for our stack. I already know I want to use [LIST YOUR PREFERRED TECHNOLOGIES HERE].
+Use @project-overview.md and @user-flow.md to recommend our tech stack. I already want to use [LIST YOUR PREFERRED TECHNOLOGIES HERE].
 
-For each part of our stack, propose and describe an industry standard and a popular alternative. We will work through the list together to determine what we'll use for the project.
+For each stack component, propose an industry standard and a popular alternative. We'll work through the list together to finalize our choices.
 ```
 
-**After receiving recommendations:** Review each technology choice, ask about pros/cons for any you're unsure about, then request the final decisions be documented in `tech-stack.md`.
+**After receiving recommendations:** Review each choice, ask about pros/cons for any you're unsure about, then request final decisions be documented in `tech-stack.md`.
 
 ### Step 4: Enhance Tech Stack Documentation
 Expand your tech stack documentation with best practices.
 
 **Prompt:**
 ```
-Update @tech-stack.md to cover all best-practices, limitations, and conventions for using the selected technologies. It should be thorough, and include important considerations and common pitfalls for each one.
+Update @tech-stack.md to cover best practices, limitations, and conventions for the selected technologies. Include important considerations and common pitfalls for each.
 ```
 
-## Phase 2: Design and UI Guidelines
+## Phase 2: Design Guidelines
 
 ### Step 5: Explore Design Options
 Learn about design principles for your application type.
 
 **Prompt:**
 ```
-Walk me through some common design principles for this type of application, and recommend some possible styles (e.g. "minimalist", "glassmorphic", "neumorphic", etc.) that fit what we're building.
-Observe @project-overview.md and @user-flow.md for context about the project to guide your recommendations.
+Walk me through common design principles for this type of application and recommend possible styles (e.g. "minimalist", "glassmorphic", "neumorphic") that fit what we're building.
+Use @project-overview.md and @user-flow.md for context.
 ```
 
-### Step 6: Create UI and Theme Rules
-Define your project's visual guidelines.
+### Step 6: Create Design Rules
+Define your project's complete visual guidelines in one document.
 
 **Customize the prompt below with your preferences:**
 ```
-I want my project to be [mobile-first/responsive/animated/iconographic/etc].
+I want my project to be [mobile-first/responsive/animated/iconographic/etc] with a [minimalist/glassmorphic/neumorphic/etc] theme.
 
-Also, I have decided I want my theme to be [minimalist/glassmorphic/neumorphic/etc].
-
-Use @project-overview, @user-flow.md, and @tech-stack.md to put together two new files, called `ui-rules.md` and `theme-rules.md`. The former should focus on common design principles for our application to follow, while the latter should outline all the colors and styles we're using to create a consistent theme across our application.
+Use @project-overview.md, @user-flow.md, and @tech-stack.md to create `design-rules.md`. This should include:
+- Design principles and UI guidelines
+- Complete color palette and typography
+- Component styling conventions
+- Spacing, layout, and interaction patterns
 ```
 
 ## Phase 3: Project Structure and Rules
@@ -79,12 +81,15 @@ Create `project-rules.md` with coding standards and file organization.
 
 **Prompt:**
 ```
-We are building an AI-first codebase, which means it needs to be modular, scalable, and easy to understand. The file structure should be highly navigable, and the code should be well-organized and easy to read.
+We are building an AI-first codebase that needs to be modular, scalable, and easy to understand. The file structure should be highly navigable, and the code should be well-organized and easy to read.
 
-All files should have descriptive names, an explanation of their contents at the top, and all functions should have proper commentation of their purpose and parameters (JSDoc, TSDoc, etc, whatever is appropriate).
+All files should have descriptive names, an explanation of their contents at the top, and all functions should have proper documentation (JSDoc, TSDoc, etc).
 To maximize compatibility with modern AI tools, files should not exceed 500 lines.
 
-Use @tech-stack.md, @user-flow.md, @project-overview.md, @ui-rules.md, and @theme-rules.md to put together a new file called `project-rules.md`, which touches on our project's directory structure, file naming conventions, and any other rules we need to follow.
+Use @tech-stack.md, @user-flow.md, @project-overview.md, and @design-rules.md to create `project-rules.md`, covering:
+- Directory structure and file naming conventions
+- Code organization and documentation standards
+- Development workflow and best practices
 ```
 
 ## Phase 4: Development Planning
@@ -94,20 +99,18 @@ Plan your project's development phases from setup to MVP to full features.
 
 **Prompt:**
 ```
-We need to define the tasks and features to build our project, progressing from a barebones setup to a minimal viable product (MVP), to a feature-rich polished version.
+Create an iterative development plan progressing from barebones setup to minimal viable product (MVP) to feature-rich version.
 
-Create an iterative development plan for the project, outlining the tasks and features needed to reach these phases.
+Rules:
+- Start with 'setup' phase: barebones functionality that runs but isn't fully usable
+- Define 'MVP' phase: minimal, usable version with core features delivering primary value
+- Add additional phases: enhancements, advanced features, polish, scalability
+- Each phase gets one document detailing scope and deliverables
+- Focus on functional products combining essential features cohesively
+- List features with actionable steps (max 5 steps per feature; break down if longer)
+- Keep phases iterative—each builds on the previous, enhancing a working product
 
-Rules to follow:
-- Start with a 'setup' phase: a barebones setup that functions at a basic level but isn't fully usable (e.g., a minimal running framework or structure).
-- Define an 'MVP' phase: a minimal, usable version with core features integrated (e.g., essential functionality that delivers the project's primary value).
-- Add additional phases as needed: enhancements to improve and expand the MVP (e.g., advanced features, polish, or scalability).
-- Each phase gets one document, detailing its scope and deliverables.
-- Focus each phase on delivering a functional product, combining essential features into a cohesive whole (e.g., key components that work together).
-- List features with actionable steps (max 5 steps per feature; break down into smaller features if longer).
-- Keep phases iterative—each builds on the previous phase, enhancing a working product.
-
-Place these documents in `_docs/phases/`. Review @project-overview.md, @user-flow.md, @tech-stack.md, and @project-rules.md to gather relevant context about the project and its features.
+Place documents in `_docs/phases/`. Review @project-overview.md, @user-flow.md, @tech-stack.md, and @project-rules.md for context.
 ```
 
 ## Phase 5: Setup for Development
@@ -146,7 +149,7 @@ Create a professional README for your project.
 
 **Prompt:**
 ```
-Using @project-overview.md, @user-flow.md, @tech-stack.md, and @project-rules.md, perform an initial update to our README to give a brief overview of our project and its conventions.
+Using @project-overview.md, @user-flow.md, @tech-stack.md, and @project-rules.md, update our README with a brief overview of our project and its conventions.
 ```
 
 ### Step 11: Organize Documentation
@@ -154,8 +157,7 @@ Ensure all documentation files are properly organized in the `_docs/` folder:
 - `_docs/project-overview.md`
 - `_docs/user-flow.md`
 - `_docs/tech-stack.md`
-- `_docs/ui-rules.md`
-- `_docs/theme-rules.md`
+- `_docs/design-rules.md`
 - `_docs/project-rules.md`
 - `_docs/phases/setup-phase.md`
 - `_docs/phases/mvp-phase.md`
@@ -175,9 +177,9 @@ Let's get started on our project.
 
 - **Take your time with each step** - Each document builds on the previous ones
 - **Ask clarifying questions** - Don't let the AI make assumptions about your project
-- **Review and refine** - Go back and update earlier documents as your understanding evolves
+- **Review and refine** - Update earlier documents as your understanding evolves
 - **Stay organized** - Keep all documentation in the `_docs/` folder for easy reference
-- **Be specific** - The more detailed your requirements, the better the AI can assist you
+- **Be specific** - Detailed requirements enable better AI assistance
 
 ## Document Structure Overview
 
@@ -186,8 +188,7 @@ _docs/
 ├── project-overview.md     # Project purpose and goals
 ├── user-flow.md           # User journey and interactions
 ├── tech-stack.md          # Technology choices and conventions
-├── ui-rules.md            # Design principles and guidelines
-├── theme-rules.md         # Colors, typography, and styling
+├── design-rules.md        # UI principles, theme, and styling
 ├── project-rules.md       # File structure and coding standards
 └── phases/
     ├── setup-phase.md     # Initial development phase
@@ -195,4 +196,4 @@ _docs/
     └── [additional-phases].md
 ```
 
-This systematic approach ensures you have a solid foundation before writing any code, leading to better project outcomes and easier maintenance.
+This systematic approach ensures a solid foundation before coding, leading to better project outcomes and easier maintenance.
