@@ -1,10 +1,52 @@
 # vibe-boilerplate
 
-A boilerplate template for starting and building out a high quality vibecoded application
+A comprehensive boilerplate for building high-quality, AI-first applications with a documentation-driven development approach.
 
-## Walkthrough:
-    1. visit docs/setup.md
-    2. Define Project Scope: Start with a high-level project overview to establish goals and context.
-    3. Create Foundational Documents: Systematically generate key documents for user flows, technology stack, UI/theme rules, and project conventions.
-    4. Establish Best Practices: Implement standards for folder structure, coding style, and development workflows.
-    5. Plan Development Phases: Outline a clear, iterative plan for building your application from a barebones setup to a polished product.
+## What is vibe-boilerplate?
+
+vibe-boilerplate provides a systematic methodology for starting projects with solid foundations. Instead of jumping straight into code, it guides you through creating comprehensive documentation that defines your project's structure, rules, and implementation plan.
+
+## Key Features
+
+- **Documentation-First Approach** - Build comprehensive project documentation before coding
+- **AI-Optimized** - Structured for maximum compatibility with AI development tools
+- **Systematic Setup** - Step-by-step process from concept to implementation
+- **Best Practices** - Industry-standard coding conventions and project structure
+- **Iterative Development** - Phased approach from MVP to full-featured application
+
+## Quick Start
+
+1. **Follow the Setup Guide**: Start with [`docs/setup.md`](docs/setup.md) for the complete walkthrough
+2. **Define Your Project**: Create a detailed project overview using the example template
+3. **Build Documentation**: Generate user flows, tech stack, design rules, and project conventions
+4. **Plan Development**: Outline iterative development phases from setup to MVP
+5. **Start Building**: Begin development with a solid foundation in place
+
+## Documentation Structure
+
+```
+docs/
+├── setup.md                  # Complete setup walkthrough
+├── project-overview-example.md # Template for project definition
+├── project-overview.md       # Your project definition
+├── user-flow.md             # User journey mapping
+├── tech-stack.md            # Technology choices and conventions
+├── design-rules.md          # UI principles and styling guidelines
+├── project-rules.md         # Coding standards and file organization
+└── phases/                  # Development phase planning
+    ├── setup-phase.md
+    ├── mvp-phase.md
+    └── [additional-phases].md
+```
+
+## Why Documentation-First?
+
+- **Clarity**: Clear project vision before implementation
+- **Consistency**: Established patterns and conventions
+- **Collaboration**: Better AI assistance and team alignment
+- **Scalability**: Modular, maintainable codebase from day one
+- **Efficiency**: Reduced decision fatigue during development
+
+## Getting Started
+
+Begin by following the setup guide in [`docs/setup.md`](docs/setup.md) to establish your project foundation and development workflow.

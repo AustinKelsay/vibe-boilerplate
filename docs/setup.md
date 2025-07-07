@@ -110,7 +110,7 @@ Rules:
 - List features with actionable steps (max 5 steps per feature; break down if longer)
 - Keep phases iterative—each builds on the previous, enhancing a working product
 
-Place documents in `_docs/phases/`. Review @project-overview.md, @user-flow.md, @tech-stack.md, and @project-rules.md for context.
+Place documents in `docs/phases/`. Review @project-overview.md, @user-flow.md, @tech-stack.md, and @project-rules.md for context.
 ```
 
 ## Phase 5: Setup for Development
@@ -153,15 +153,15 @@ Using @project-overview.md, @user-flow.md, @tech-stack.md, and @project-rules.md
 ```
 
 ### Step 11: Organize Documentation
-Ensure all documentation files are properly organized in the `_docs/` folder:
-- `_docs/project-overview.md`
-- `_docs/user-flow.md`
-- `_docs/tech-stack.md`
-- `_docs/design-rules.md`
-- `_docs/project-rules.md`
-- `_docs/phases/setup-phase.md`
-- `_docs/phases/mvp-phase.md`
-- `_docs/phases/[additional-phases].md`
+Ensure all documentation files are properly organized in the `docs/` folder:
+- `docs/project-overview.md`
+- `docs/user-flow.md`
+- `docs/tech-stack.md`
+- `docs/design-rules.md`
+- `docs/project-rules.md`
+- `docs/phases/setup-phase.md`
+- `docs/phases/mvp-phase.md`
+- `docs/phases/[additional-phases].md`
 
 ### Step 12: Begin Development
 With all documentation in place, start development using your setup phase document.
@@ -178,13 +178,13 @@ Let's get started on our project.
 - **Take your time with each step** - Each document builds on the previous ones
 - **Ask clarifying questions** - Don't let the AI make assumptions about your project
 - **Review and refine** - Update earlier documents as your understanding evolves
-- **Stay organized** - Keep all documentation in the `_docs/` folder for easy reference
+- **Stay organized** - Keep all documentation in the `docs/` folder for easy reference
 - **Be specific** - Detailed requirements enable better AI assistance
 
 ## Document Structure Overview
 
 ```
-_docs/
+docs/
 ├── project-overview.md     # Project purpose and goals
 ├── user-flow.md           # User journey and interactions
 ├── tech-stack.md          # Technology choices and conventions
